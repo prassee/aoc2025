@@ -1,5 +1,5 @@
 [project]
-name = "aoc2025py"
+name = "aoc2025"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,5 +8,5 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "marimo[recommended]>=0.18.1",
+    "ipykernel>=7.1.0",
 ]
