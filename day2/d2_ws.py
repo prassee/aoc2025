@@ -16,3 +16,18 @@ rotation = 280
 int(rotation / x)
 # %% +ve
 int(rotation / (100 - x))
+
+"""
+input_seq = [
+    "L68",
+    "L30",
+    "R48",
+    "L5",
+    "R60",
+    "L55",
+    "L1",
+    "L99",
+    "R14",
+    "L82",
+]
+"""
