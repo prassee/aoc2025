@@ -51,6 +51,8 @@ class Dial:
         """
         # Update position using modulo to wrap around the dial
         # Positive values move clockwise, negative values move counter-clockwise
+        zero_crossed = self.count_zero_crossing(self.current_position, abs(new_pos), -1)
+        print(f" dial crossed 0 - {zero_crossed} times")
         self.current_position = (self.current_position + new_pos) % len(self.dial)
 
         # Check if we landed exactly on position 0 and increment counter
