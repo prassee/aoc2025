@@ -1,22 +1,19 @@
 # %%
-x = 82
+
+current_pos = 82
 max = 100
 direction = 1
 
-# %%
-print(f"{x} {max} {direction}")
-# %%
-direction = -1
-print(f"{x} {max} {direction}")
-# if +ve diff of 100 - curr_pos
-# if -ve curr_pos
-rotation = 280
-# %%
-# -ve
-int(rotation / x)
-# %% +ve
-int(rotation / (100 - x))
 
+def count_zero_crossing(current_pos: int, rotation: int, direction: int) -> int:
+    return (
+        int(rotation / current_pos)
+        if direction < 0
+        else int(rotation / (100 - current_pos))
+    )
+
+
+# %%
 """
 input_seq = [
     "L68",
@@ -31,3 +28,6 @@ input_seq = [
     "L82",
 ]
 """
+direction = 1
+rotation = 280
+count_zero_crossing(current_pos, rotation, direction)
