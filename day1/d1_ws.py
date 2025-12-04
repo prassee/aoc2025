@@ -50,5 +50,19 @@ def main():
     print(dial_controller.zero_pointings)  # 1139
 
 
+"""
+input_seq = [
+    "L68",
+    "L30",
+    "R48",
+    "L5",
+    "R60",
+    "L55",
+    "L1",
+    "L99",
+    "R14",
+    "L82",
+]
+"""
 if __name__ == "__main__":
     main()
